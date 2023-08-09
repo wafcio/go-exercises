@@ -14,6 +14,6 @@ func TestEuler4FirstExample(t *testing.T) {
 func TestEuler4SecodExample(t *testing.T) {
 	result := Euler4(3)
 	if result != 906609 {
-		t.Fatalf(`Euler #3 returns invalid value = %d`, result)
+		t.Fatalf(`Euler #4 returns invalid value = %d`, result)
 	}
 }
