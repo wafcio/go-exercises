@@ -4,16 +4,16 @@ import (
 	"testing"
 )
 
-func TestEuler4FirstExample(t *testing.T) {
+func TestEuler4WithInput2(t *testing.T) {
 	result := Euler4(2)
-	if result != 9009 {
+	if result != 9_009 {
 		t.Fatalf(`Euler #4 returns invalid value = %d`, result)
 	}
 }
 
-func TestEuler4SecodExample(t *testing.T) {
+func TestEuler4WithInput3(t *testing.T) {
 	result := Euler4(3)
-	if result != 906609 {
+	if result != 906_609 {
 		t.Fatalf(`Euler #4 returns invalid value = %d`, result)
 	}
 }

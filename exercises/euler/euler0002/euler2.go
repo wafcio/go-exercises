@@ -1,12 +1,12 @@
 package main
 
-func Euler2() int {
+func Euler2(n int) int {
 	num1 := 1
 	num2 := 2
 	sum := 2
 	value := -1
 
-	for value < 4_000_000 {
+	for value < n {
 		value = num1 + num2
 
 		if value%2 == 0 {
