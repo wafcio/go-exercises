@@ -10,5 +10,5 @@ This repo contains programming exercises in Go language.
 ## Verification
 
 ```
-go test ./...
+gotest ./...
 ```
