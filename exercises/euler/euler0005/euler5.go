@@ -1,14 +1,11 @@
 package main
 
-import "fmt"
-
 func Euler5(n int) int {
 	factors := []int{}
 
 	for number := 2; number <= n; number++ {
 		currentFactors := primeFactors(number)
 		missingFactors := sliceDifference(currentFactors, factors)
-		fmt.Println(missingFactors)
 		factors = append(factors, missingFactors...)
 	}
 
