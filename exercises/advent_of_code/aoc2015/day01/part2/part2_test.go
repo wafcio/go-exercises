@@ -26,3 +26,10 @@ func TestAoc2015Day1Part2Example3(t *testing.T) {
 		t.Fatalf(`Advent of Code 2015 Day 1 Part 2, Example 10 failed, returns invalid value = %d`, result)
 	}
 }
+
+func TestAoc2015Day1Part2Example4(t *testing.T) {
+	result := Aoc2015Day1Part2("(")
+	if result != -1 {
+		t.Fatalf(`Advent of Code 2015 Day 1 Part 2, Example 1 failed, returns invalid value = %d`, result)
+	}
+}

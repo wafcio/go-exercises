@@ -12,3 +12,11 @@ This repo contains programming exercises in Go language.
 ```
 gotest ./...
 ```
+
+### Check test coverage
+
+```
+gotest ./... -cover
+gotest ./... -coverprofile=coverage.out
+go tool cover -html=coverage.out
+```

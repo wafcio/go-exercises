@@ -2,7 +2,6 @@ package main
 
 import (
 	"io/ioutil"
-	"log"
 	"strings"
 )
 
@@ -27,11 +26,6 @@ func Euler8(n int) int {
 }
 
 func readFile() string {
-	content, err := ioutil.ReadFile("big_number.txt")
-
-	if err != nil {
-		log.Fatal(err)
-	}
-
+	content, _ := ioutil.ReadFile("big_number.txt")
 	return strings.Replace(string(content), "\n", "", -1)
 }

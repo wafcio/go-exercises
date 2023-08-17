@@ -4,6 +4,13 @@ import (
 	"testing"
 )
 
+func TestEuler9WithInput1(t *testing.T) {
+	result := Euler9(1)
+	if result != 0 {
+		t.Fatalf(`Euler #9 returns invalid value = %d`, result)
+	}
+}
+
 func TestEuler9WithInput12(t *testing.T) {
 	result := Euler9(12)
 	if result != 60 {
