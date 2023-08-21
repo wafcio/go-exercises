@@ -2,7 +2,6 @@ package main
 
 import (
 	"bufio"
-	"fmt"
 	"os"
 	"strconv"
 	"strings"
@@ -28,8 +27,6 @@ func readFile() [][]string {
 		output = append(output, strings.Split(fileScanner.Text(), " "))
 	}
 	readFile.Close()
-
-	fmt.Println(len(output[0]))
 
 	return output
 }
