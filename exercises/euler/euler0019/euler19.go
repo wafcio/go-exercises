@@ -8,8 +8,8 @@ import (
 func Euler19() int {
 	total := 0
 
-	for year := 1901; year <= 2000; year += 1 {
-		for month := 1; month <= 12; month += 1 {
+	for year := 1901; year <= 2000; year++ {
+		for month := 1; month <= 12; month++ {
 			monthStr := strconv.Itoa(month)
 			if len(monthStr) == 1 {
 				monthStr = "0" + monthStr
